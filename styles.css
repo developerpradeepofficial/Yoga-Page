@@ -295,7 +295,10 @@ a .icon:hover {
   color: #387467;
 }
 /* Mobile Screen */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 720px), (orientation: portrait) {
+  * {
+    overflow-x: hidden;
+  }
   section {
     padding: 1.5rem;
   }
