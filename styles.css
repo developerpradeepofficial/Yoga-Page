@@ -1,0 +1,371 @@
+:root {
+  --bg-main: radial-gradient(#012b02, #000000);
+  --bg-main-light: radial-gradient(#053f06, #000000);
+  --bg-gradient-main: linear-gradient(45deg, #d6ca26 30%, #009245);
+  --bg-gradient-secondary: linear-gradient(20deg, #08fd97 30%, #0d6d3a);
+  --head-text-color: #abff3d;
+}
+
+* {
+  box-sizing: border-box;
+  line-height: 1.8;
+}
+::-webkit-scrollbar {
+  width: 16px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  /* background-color: #e4e4e4; */
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  /* background-color: #d4aa70; */
+  background: linear-gradient(transparent, #abff3d);
+  border-radius: 100px;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  background: var(--bg-main) no-repeat;
+  font-family: "Montserrat", sans-serif;
+  color: #ddd;
+}
+
+p {
+  color: #e2f3e2a1;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+img {
+  object-fit: cover;
+}
+a:hover {
+  color: #1ab91a;
+}
+
+.click:active,
+.click-visited {
+  animation: click 0.1s ease-in-out 1;
+}
+h2 {
+  color: var(--head-text-color);
+}
+.a-btn {
+  font-weight: bold;
+}
+
+.btn {
+  font-weight: bold;
+}
+.btn:hover {
+  opacity: 0.8;
+  color: invert;
+}
+.rounded-border {
+  border-radius: 20px;
+}
+.index-5 {
+  z-index: 50;
+}
+/*  colors */
+.bg-main-hide {
+  background: linear-gradient(rgb(1, 17, 2), rgb(1, 17, 2), transparent);
+}
+.bg-main-light {
+  background: var(--bg-main-light);
+}
+.bg-gradient-secondary {
+  background: var(--bg-gradient-secondary);
+}
+.btn-violet {
+  background-color: blueviolet;
+}
+.btn-outline-violet {
+  background: transparent;
+  border: 1px solid #a305a3;
+  color: #fff;
+}
+.btn-outline-violet:is(:hover, :visited) {
+  background: violet;
+  color: #000;
+}
+.btn-green {
+  background: rgba(2, 77, 2, 0.5);
+  color: #fff;
+}
+.btn-green:hover {
+  background: lightgreen;
+  color: #000;
+}
+
+.border-lightblue {
+  border-bottom: 8px solid;
+  border-color: aqua;
+  border-bottom-color: aqua;
+}
+.border-violet {
+  border-bottom: 8px solid;
+  border-color: blueviolet;
+  border-bottom-color: blueviolet;
+}
+.border-yellow {
+  border-bottom: 8px solid;
+  border-color: #e4e478;
+  border-bottom-color: #e4e478;
+}
+.border-green {
+  border-bottom: 8px solid;
+  border-color: lightgreen;
+  border-bottom-color: lightgreen;
+}
+/* text-colors */
+.text-green {
+  color: rgb(17, 194, 17);
+}
+
+nav {
+  z-index: 1;
+}
+
+.logo-main {
+  width: 150px;
+  height: auto;
+  margin-left: -19px;
+}
+
+.nav-item {
+  margin-left: 2rem;
+}
+.nav-item:hover {
+  transform: translateY(-4px);
+}
+.nav-link {
+  color: #fff !important;
+}
+.nav-link:hover {
+  color: #39b93b !important;
+}
+
+/* Hero Section */
+
+.hero-text {
+  width: 60%;
+  z-index: 1;
+}
+.hero-title {
+  font-size: 4rem;
+  font-family: "Roboto", sans-serif;
+}
+.hero-img {
+  object-fit: cover;
+  transform: scale(1.2);
+}
+.hero-subtitle {
+  color: rgba(222, 247, 222, 0.5);
+}
+#take-class-btn:hover {
+  background: rgb(233, 70, 233);
+}
+.achivements {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.icon {
+  font-size: 1.3rem;
+}
+.hero-img-2 {
+  width: 55%;
+}
+.hero-img-1::before {
+  content: "";
+  position: absolute;
+  top: -45%;
+  right: -65%;
+  width: 1000px;
+  height: 250px;
+  border-radius: 800px;
+  background: var(--bg-gradient-main);
+  transform: rotate(50deg);
+  z-index: -1;
+}
+/* Section 2 */
+.hero-title-2 {
+  font-weight: 400;
+  color: rgb(11, 158, 11);
+}
+/* Card Section */
+.card {
+  border-radius: 300px;
+  overflow: hidden;
+  width: 23%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+.card-img {
+  object-fit: contain;
+  position: relative;
+  z-index: 0;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+}
+.card-img-overlay {
+  top: 78% !important;
+}
+.card-text {
+  font-weight: bold;
+}
+
+/* Teacher's */
+.teacher-profile-container {
+  height: 350px;
+}
+.hero-img-3 {
+  position: relative;
+  bottom: 10%;
+  left: -5%;
+}
+/* Testimonials */
+
+.testimonials-container {
+  background: rgb(2, 68, 2);
+  border-radius: 40px;
+}
+.user-profile {
+  height: 50px;
+}
+.user-name {
+  margin-left: -30px;
+}
+.user-name > * {
+  margin: 0;
+  padding: 0;
+}
+.profile-img {
+  border-radius: 50%;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%, -50%);
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  padding: 2px;
+  object-fit: cover;
+}
+.quote {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  right: 8%;
+  bottom: -20%;
+}
+/* Blogs */
+.blog-img {
+  border-radius: 150px;
+  min-height: 100%;
+}
+/* Footer */
+.foot-title {
+  color: var(--head-text-color);
+}
+.foot-form-input {
+  background: rgb(0, 68, 0, 0.5);
+  border-radius: 20px;
+}
+.subscribe-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+a .icon {
+  font-size: 15px;
+}
+a .icon:hover {
+  color: #387467;
+}
+/* Mobile Screen */
+@media screen and (max-width: 720px) {
+  section {
+    padding: 1.5rem;
+  }
+  .hero-section {
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .hero-text {
+    width: auto;
+  }
+  .hero-subtitle {
+    font-size: small;
+  }
+  .hero-img-1 {
+    margin-top: 3rem;
+    width: 50%;
+  }
+  .hero-img-1::before {
+    display: none;
+  }
+
+  #about > .d-flex {
+    flex-direction: column;
+  }
+  .hero-img-2 {
+    order: 2;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .d-sm-none {
+    display: none;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .card {
+    width: 70%;
+  }
+  .card:nth-child(even) {
+    margin-left: auto;
+  }
+  .hero-img-3 {
+    display: none;
+  }
+  .teacher-profile-container {
+    height: auto;
+  }
+  .teacher-profile-container .hero-text {
+    margin: 0 !important;
+    padding: 1.5rem;
+  }
+
+  #testimonials .row {
+    padding: 2rem;
+  }
+
+  .testimonials-container {
+    min-width: 100%;
+  }
+}
+
+/* Animations */
+@keyframes click {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
